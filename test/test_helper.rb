@@ -143,7 +143,6 @@ end
 class ParanoidBoolean < ActiveRecord::Base
   acts_as_paranoid :column_type => "boolean", :column => "is_deleted"
   validates_as_paranoid
-  validates_uniqueness_of_without_deleted :name
 
   belongs_to :paranoid_time
   has_one :paranoid_has_one_dependant, :dependent => :destroy
