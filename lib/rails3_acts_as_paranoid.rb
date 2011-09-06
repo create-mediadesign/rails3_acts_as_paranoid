@@ -31,8 +31,7 @@ module ActsAsParanoid
       alias_method :destroy!, :destroy
     end
     
-    # Magic!
-    default_scope where("#{paranoid_column_reference} IS ?", nil)
+    scope :not_deleted, where("#{paranoid_column_reference} IS ?", nil)
     
     scope :paranoid_deleted_around_time, lambda {|value, window|
       if self.class.respond_to?(:paranoid?) && self.class.paranoid?
