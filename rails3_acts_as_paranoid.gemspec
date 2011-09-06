@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.homepage          = "http://github.com/goncalossilva/rails3_acts_as_paranoid"
   s.summary           = "Active Record (>=3.0) plugin which allows you to hide and restore records without actually deleting them."
   s.description       = "Active Record (>=3.0) plugin which allows you to hide and restore records without actually deleting them. Check its GitHub page for more in-depth information."
-  s.rubyforge_project = s.name
+  s.rubyforge_project = s.name + "_create"
 
   s.required_rubygems_version = ">= 1.3.6"
   
