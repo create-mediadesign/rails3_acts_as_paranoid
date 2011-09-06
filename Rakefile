@@ -1,6 +1,6 @@
 require('bundler/gem_tasks')
 require "rake/testtask"
-require "rake/rdoctask"
+require "rdoc/task"
 
 gemspec = eval(File.read(Dir["*.gemspec"].first))
 
