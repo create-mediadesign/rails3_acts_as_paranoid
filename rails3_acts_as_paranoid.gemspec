@@ -3,7 +3,7 @@ $:.push(File.expand_path('../lib', __FILE__))
 require('rails3_acts_as_paranoid/version')
 
 Gem::Specification.new do |s|
-  s.name              = "rails3_acts_as_paranoid"
+  s.name              = "rails3_acts_as_paranoid_create"
   s.version           = Rails3ActsAsParanoid::VERSION
   s.platform          = Gem::Platform::RUBY
   s.authors           = ["Goncalo Silva", "Philipp Ullmann"]
@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.homepage          = "http://github.com/goncalossilva/rails3_acts_as_paranoid"
   s.summary           = "Active Record (>=3.0) plugin which allows you to hide and restore records without actually deleting them."
   s.description       = "Active Record (>=3.0) plugin which allows you to hide and restore records without actually deleting them. Check its GitHub page for more in-depth information."
-  s.rubyforge_project = s.name + "_create"
+  s.rubyforge_project = s.name
 
   s.required_rubygems_version = ">= 1.3.6"
   
